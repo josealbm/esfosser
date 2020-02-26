@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Arcade;
+    src: url(./fonts/ARCADECLASSIC.TTF);
+}
+
+* {
+    font-family: Arcade;
+    letter-spacing: 2px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+canvas {
+    display: none;
+    width: 400px;
+    height: 400px;
+    border: solid 2px;
+    justify-content: center;
+    align-content: center;
+    margin: 30px;
+}
+
+img {
+    display: none;
+}
+
+.game-selector {
+    margin: 10px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Es Fosser</title>
+</head>
+
+<body>
+    <div class="game-selector">
+        <span>Posa el teu nick</span><input type="text" id="player">
+        <span>Quin mapa vols emprar?</span>
+        <select>
+            <option>Mapa 1</option>
+            <option>Mapa 2</option>
+        </select>
+        <button id="submit" onclick="startGame()">Selecciona</button>
+    </div>
+    <div class="game-status">
+        <p id="player-name"></p>
+        <p id="score"></p>
+        <p id="lives"></p>
+    </div>
+
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+
+    <img src="./images/fosser-B.jpg" id="imgdown" alt="down">
+    <img src="./images/fosser-L.jpg" id="imgleft" alt="left">
+    <img src="./images/fosser-R.jpg" id="imgright" alt="right">
+    <img src="./images/fosser-T.jpg" id="imgup" alt="up">
+    <img src="./images/8bitzombie.png" id="zombieleft" alt="left">
+    <img src="./images/8bitzombie-R.png" id="zombieright" alt="right">
+    <img src="./images/8bitzombie-B.png" id="zombiedown" alt="down">
+    <img src="./images/8bitzombie-T.png" id="zombieup" alt="up">
+    <img src="./images/tombstone.png" id="tombstone" alt="tomba">
+    <img src="./images/zombieTrapped.jpg" id="trapped" alt="trapped">
+
+</body>
+<script src="./scripts/scripts.js"></script>
+<script src="./scripts/Fosser.js"></script>
+<script src="./scripts/Zombie.js"></script>
+
+</html>
